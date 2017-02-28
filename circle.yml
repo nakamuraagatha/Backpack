@@ -1,0 +1,13 @@
+machine:
+  timezone:
+    America/Los_Angeles
+  php:
+    version: 7.1.0
+  services:
+    - mysql
+
+dependencies:
+  post:
+    - sudo cp ~/laravel/backpack /etc/apache2/sites-available
+    - sudo a2ensite backpack
+    - sudo service apache2 restart
