@@ -5,6 +5,8 @@ machine:
     version: 7.1.0
   services:
     - mysql
+  pre:
+    - php artisan migrate --seed
 
 dependencies:
   post:
